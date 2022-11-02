@@ -1,18 +1,79 @@
+<div class="article_show">
 <h1><%= current_user == @article.user ||(current_user.role == 'admin' if user_signed_in?) ? (link_to @article.title, edit_article_path(@article)) :  @article.title %></h1>
+<h6 style=" font-style: italic; "><%= @article.status%></h6>
 <p><%= @article.body %></p>
 <p class='author'> author : <%= link_to @article.user.email.split("@")[0], user_path(@article.user), {:class => "btn btn-outline-secondary"}
-  %> </p>
+  %> 
+</p>
+<%if user_signed_in?%>
+ <%= link_to t("get a PDF"), article_path(@article, format: :pdf), target: :_blank %>
+ <br>
+<%end%>
+<div class="reactions"> 
+  <p> likes:<%= @article.likes.count%> dislikes:<%= @article.dislikes.count%> <p>
+<%if user_signed_in?%>
+  <%like = current_user.likes.find_by(likeable: @article) %>
+  <% if like.nil? %>
+    <form action="/likes" method="post" style="display:inline">
+      <input type ="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+      <input type ="hidden" name="like[likeable_id]" value="<%= @article.id %>">
+      <input type ="hidden" name="like[likeable_type]" value="Article">
+      <button type ="submit" class= "btn">
+        <i class="bi bi-heart"  style="font-size: 1.5em; color: grey; "></i>
+      </button>
 
+    </form>
+  <%else%>
+    <form action="<%= like_path(like)%>" method="post" style="display:inline">
+      <input type ="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+      <input type ="hidden" name="_method" value="DELETE">
+      <button type ="submit" class= "btn">
+      <i class="bi bi-heart-fill"  style="font-size: 1.5em; color: red; "></i>
+      </button>    </form>
+  <%end%>
+<%end%>
 
+<%if user_signed_in? %>
+<% dislike = current_user.dislikes.find_by(dislikeable: @article) %>
+  <% if dislike.nil? %>
+    <form action="/dislikes" method="post" style="display:inline">
+      <input type ="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+      <input type ="hidden" name="dislike[dislikeable_id]" value="<%= @article.id %>">
+      <input type ="hidden" name="dislike[dislikeable_type]" value="Article">
+      <button type ="submit" class= "btn" >
+        <i class="bi bi-heartbreak" style="font-size: 1.5em; color: grey; "></i>
+      </button>
+    </form>
+    <%else%>
+    <form action="<%= dislike_path(dislike)%>" method="post" style="display:inline">
+      <input type ="hidden" name="authenticity_token" value="<%=form_authenticity_token %>">
+      <input type ="hidden" name="_method" value="DELETE">
+      <button type ="submit" class= "btn" >
+        <i class="bi bi-heartbreak-fill"  style="font-size: 1.5em; color: black; "></i>
+      </button> 
+     </form>  
+  <%end%>
+<%end%>
+</div>
+<br>
+<div     style= "padding: 1em; margin: 1em;">
 
-<h2>Comments</h2>
-<%= render 'comments/comments'%>
+ <%if user_signed_in?%>
+    <%= render 'comments/form', submit_tag: "comment", article: @article, comment: @article.comments.build %>
+  <%end%>  
+
+</div>
+<% if @article.comments.count>0 %>
+  <h5><%= t("comments")%> : </h5>
+<div class="container">
+  <% @comments.each do |comment| %>
+    <%= render 'comments/comment', 
+    article: @article, 
+    comment: comment %>
+  <% end %>
+</div>  
   <div class="digg_pagination center">
     <%= will_paginate @comments%>
   </div>
+<% end %>
 
-<%if user_signed_in?%>
-<%= render 'comments/form' %>
-
-
-<%end%>

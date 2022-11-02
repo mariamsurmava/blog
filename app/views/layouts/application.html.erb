@@ -7,14 +7,20 @@
     
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{Rails.application.credentials.dig(:MAPS_API_KEY)}&libraries=places&callback=dispatchMapsEvent",
+                            async: true,
+                            defer: true,
+                            "data-turbolinks-eval": false %>
   </head>
   <body>
    <%=render partial: 'partials/navbar'%>
-   <div class="container w-50 mx-auto mt-4 bg-light p-5 style="border-radius: 25px" >
+   <div class="container mx-auto mt-4 p-5 style="border-radius: 25px" >
          <%= yield %>
 
 </div>
 </html>
+

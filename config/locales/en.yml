@@ -31,3 +31,163 @@
 
 en:
   hello: "Hello world"
+  welcome: "welcome bitch"
+  email: 'email'
+  password: 'password'
+  log in: "log in"
+  Log in: "Log in"
+  sign up: "sign up"
+  Sign up: Sign up
+  log_out: "log out"
+  edit: "edit"
+  Edit: Edit
+  delete: "delete"
+  Delete: Delete
+  categories: "categories"
+  home: "home"
+  eddit profile: "edit profile"
+  article: "article"
+  articles: "articles"
+  read more: "read more"
+  category: "category"
+  like: "like"
+  likes: "likes"
+  by: "by"
+  search: "search"
+  comments: "comments"
+  create comment: "create comment"
+  next: "next"
+  previous: "previous"
+  status: "status"
+  public: "public"
+  archived: "archived"
+  private: "private"
+  role: "role" 
+  title: "title"
+  content: "content"
+  created_at: "created_at"
+  author: "author"
+  approved: "approved"
+  create new article: " create new article"
+  all articles: "all articles"
+  users: "users"
+  destroy: "destroy"
+  all articles: "all articles"
+  repeat the password: repeat the password
+  characters minimum: characters minimum
+  Unhappy? Cancel your account: "Unhappy? Cancel your account"
+  current password: მიმდინარე პაროლი
+  we need your current password to confirm your changes:   we need your current password to confirm your changes
+  leave blank if you don't want to change it: leave blank if you don't want to change it
+  back: "back"
+  Back: Back
+  Are you sure?: "Are you sure?"
+  members only: "members only"
+  empty if not approved: "empty if not approved"
+  body: "body"
+  liked: "liked"
+  search for articles: search for articles
+  Edit this category: Edit this category
+  Back to categories: Back to categories
+  Destroy this category:  Destroy this category
+  Destroy Comment: Destroy Comment
+  New password: New password
+  Confirm new password: Confirm new password
+  Change my password: Change my password
+  Update: Update
+  Cancel my account: Cancel my account
+  username: username
+  new-password: new-password
+  remember_me: remember_me
+  Forgot your password?: Forgot your password?
+  not approved: not approved
+  profile: profile
+  admin panel: admin panel
+  Edit Profile: Edit Profile
+  Log Out: Log Out
+  art: art
+  history: history
+  whatever: whatever
+  romance: romance
+  books: books
+  it: it
+  sport: sport
+  description: description
+  no description: no description
+  hate: hate
+  hated: hated
+  avatar: avatar
+  new article: new article
+  admin: admin
+  New category: New category
+  Category request: Category request
+  check to approve: check to approve
+  Show this category: Show this category
+  Back to categories: Back to categories
+  Categories: Categories
+  password confirmation: password confirmation
+  language: language
+  categories by languages: categories by languages
+  english articles: english articles
+  georgian articles: georgian articles
+  please choose a language of your article so that readers can find your article easier: please choose a language of your article so that readers can find your article easier
+  waiting for approval: waiting for approval 
+  delete duggestion: Delete Suggestion
+  category name: Category Name	
+  contact: contact
+  Phone: Phone
+  Country: Country
+  Edit this number: Edit this number
+  Delete number: Delete number
+  New phone: New phone
+  Back to phones: Back to phones
+  subscribe: subscribe
+  You'll get never before seen content, an extra article per week, and access to our private community:  You'll get never before seen content, an extra article per week, and access to our private community
+  Subscribe for access: Subscribe for access
+  you can see 'members only' articles: you can see 'members only' articles
+  you are already subscribed to the bloggold: you are already subscribed to the bloggold
+  Subscribe for $4/mo: Subscribe for $4/mo
+  You'll Get Never Before Seen Content, An Extra Article Per Week, And Access To Our Private Community: You'll Get Never Before Seen Content, An Extra Article Per Week, And Access To Our Private Community.
+  edit comment: edit comment
+  Delete phone: Delete phone
+  Edit this phone: Edit this phone
+  Back to contacts: Back to contacts
+  add location: add location
+  locations: locations
+  search: search
+  latitude: latitude
+  longitude: longitude
+  Name: Name
+  Latitude: Latitude
+  Longitude: Longitude
+  Show this place: Show this place
+  Back to places: Back to places
+  New place: New place
+  Destroy this place: Destroy this place
+  name: name
+  Edit this place: Edit this place
+  explore: explore
+  Too many atricles to choose which one to start with? explore random three articles and see what fate brings to you!: Too many atricles to choose which one to start with? Explore random three articles and see what fate brings to you!
+  errors prohibited this article from being saved: prohibited this article from being saved
+  prohibited this location from being saved: prohibited this location from being saved
+  prohibited this phone from being saved: prohibited this phone from being saved
+  Title can't be blank: Title can't be blank
+  Body can't be blank: Body can't be blank
+  Name can't be blank: Address can't be blank
+  add location here: add location here
+  Phone can't be blank: Phone can't be blank
+  Phone format not supported for chosen coutry: Phone format not supported for chosen coutry
+  Phone Only positive number without spaces are allowed: Phone Only positive number without spaces are allowed
+  commented on: commented on
+  sign in with google: sign in with google
+  Didn't receive confirmation instructions?: Didn't receive confirmation instructions?
+  location unknown: location unknown
+  back to profile: back to profile
+  edited: edited
+  commented: commented
+  Update: Update
+  ago: ago
+  all articles: all articles
+  No notifications yet: No notifications yet
+  disliked: disliked
+  get a PDF: get a PDF

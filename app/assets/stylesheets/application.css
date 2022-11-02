@@ -14,33 +14,98 @@
  *= require_self
  */
 
-.forms{
-  width: 400px;
+ .map {
+  width: 100%;
+  min-height: 400px;
+}
+
+ #phones {
+  display:block;
+  background-color: #ffffff52;
+  border: 2px solid rgba(255, 128, 128, 0.227);
+  border-collapse: separate;
+  border-spacing: 8px; 
+  margin: 20px;
+  padding: 5px;
+  border-radius: 1%; }
+  
+body{
+  background-color:rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.article_show{
+  background-color: rgba(255, 255, 255, 0.289);
+  padding: 50px;
+  border-radius: 3%;
+
+}
+
+.article_form{
+  width: 100%;
+  border-radius: 3%;
   background-color: rgb(255, 255, 255);
   padding: 15px;
   position: relative;
   margin: auto;
 }
+ 
+ .reactions {
+  display: flexbox;
+ }
+ .admintable{
+  position: absolute;
+  width: 100%;
+  left:0%;
+ }
+ #articles{
+  display:block;
+  background-color: rgba(226, 240, 255, 0.711);
+  border-collapse: separate;
+  padding: 30px;
+  border-spacing: 8px; 
+  width: 1250px;
+  color:rgb(9, 9, 9);
+  border-style:solid;
+  border-width: 10px;
+  border-color: #ffffff;
+}
+
+ .aticlestable{
+  width:auto;
+  block-size: fit-content
+ }
+
+.forms{
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.451);
+  padding: 15px;
+  position: relative;
+  top: 200px;
+  align-self: center;
+  margin: auto;
+  border-radius: 2%;
+}
 .actions{
   margin-top: 20px;
 }
 .general {
-  background-color: #ffffff;
   display: flex;
-  text-align: center;
+  padding: 20px;
+  border-radius: 1%;
+  box-sizing: content-box;
 }
 
-.table{
-  margin: auto;
-}
- .comment {
+
+.comment {
   color: black;
-  border: 3px solid rgb(246, 242, 242);
-  padding: 20px 5px;
-  margin: 20px;
-  background-color: rgb(255, 255, 255);
-    box-shadow: 5px 2px 5px 5px #cacaca;
-  border-radius: 25px
+  border: 1px solid rgb(156, 154, 154);
+  padding: 5px 5px;
+  margin: 2px;
+  background-color: white;
 }
 
  
@@ -68,49 +133,6 @@
 
 }
 
-.addcomment{
-  color: rgb(255, 255, 255);
-  position: relative;
-  left: 20px;
-  text-shadow: 2px 2px #aca6a6
-}
-
-
-.article{
-  color: black;
-  background-color: #615b5b62;
-  border: 3px solid rgb(246, 242, 242);
-  padding: 20px 10px;
-  border-radius: 25px;
-  margin: 20px;
-}
-
-.article_body {
-  color: rgb(255, 255, 255);
-  background-color: #3b2727;
-
-}
-
-tbody {
-background-color: #b0b0b3;}
-
-.title {
-  font-style: italic;
-  font-size: 30px;
-  color: #3b2727;
-
-}
-
-
-.article_functions {
-  color: black;
-  background-color: #ffffff;
-
-}
-.article_info {
-  color: black;
-  background-color: #dadada;
-}
 .blogcounter{
   color: rgb(210, 209, 209);
   font-size: xx-large;
@@ -124,32 +146,14 @@ background-color: #b0b0b3;}
   opacity: 0.5;
 }
 
-
-
-
-.title{
-  font-family: Apple Chancery, cursiv;
-  text-shadow: 2px 2px #aca6a6;
+.golden{
+  background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
 }
-
-
-.blogcounter{
-  color: rgb(210, 209, 209);
-  font-size: xx-large;
-  border: 3px;
-  padding: 20px 10px;
-  text-shadow: 2px 2px #a9a7a7;
-}
-
-
-.author {
-  opacity: 0.5;
-}
-
-
 .digg_pagination {
-  background: #f7f6f6;
+  background: #ffffff00;
   cursor: default;
+  position: relative;
+  
   /* self-clearing method: */ }
   .digg_pagination a, .digg_pagination span, .digg_pagination em {
     padding: 0.2em 0.5em;
@@ -162,26 +166,26 @@ background-color: #b0b0b3;}
   .digg_pagination .current {
     font-style: normal;
     font-weight: bold;
-    background: #2e6ab1;
+    background: #333436;
     color: white;
-    border: 1px solid #2e6ab1; }
+    border: 1px solid #202326; }
   .digg_pagination a {
     text-decoration: none;
-    color: #105cb6;
-    border: 1px solid #9aafe5; }
+    color: #333639;
+    border: 1px solid #7f828a; }
     .digg_pagination a:hover, .digg_pagination a:focus {
       color: #000033;
       border-color: #000033; }
   .digg_pagination .page_info {
-    background: #2e6ab1;
-    color: white;
+    background: #1d1e1f;
+    color: rgba(255, 255, 255, 0);
     padding: 0.4em 0.6em;
     width: 22em;
     margin-bottom: 0.3em;
     text-align: center; }
     .digg_pagination .page_info b {
-      color: #000033;
-      background: #6aa6ed;
+      color: #000000;
+      background: #494b4d;
       padding: 0.1em 0.25em; }
   .digg_pagination:after {
     content: ".";
@@ -194,3 +198,9 @@ background-color: #b0b0b3;}
   *:first-child + html .digg_pagination {
     overflow: hidden; 
 }
+
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+

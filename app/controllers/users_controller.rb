@@ -1,42 +1,41 @@
-class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :edit]
-  before_action :get_users, only: [:index, :show]
-  include Pundit
-  
+# frozen_string_literal: true
 
-  def show
-    @user = User.find(params[:id])
-    @articles = @user.articles.paginate(page: params[:page], per_page: 3) 
-  end
-  
-  def pundit_user
-    User.find(current_user.id)
-  end
-  
+class UsersController < ApplicationController
+  before_action :set_user, only: %i[show edit]
+  include Pundit
+
   def index
-    @q = User.ransack(params[:q])
-    @users = User.all.order(created_at: :ASC)
-    @users = @q.result(distinct: true).order(created_at: :ASC)
     authorize User
+    @q = User.ransack(params[:q])
+    @users = @q.result(distinct: true).order(created_at: :ASC).paginate(page: params[:page], per_page: 10)
   end
 
   def search
-    @users =  User.where("username_or_email_or_role LIKE ?", "%" + params[:q] + "%").paginate(page: params[:page], per_page: 10)
+    @users = User.where('email_or_user_name LIKE ?', "%#{params[:q]}%").paginate(page: params[:page],
+                                                                                 per_page: 10)
+  end
+
+  def show
+    @users = User.order(created_at: :desc)
+    @user = User.find(params[:id])
+    @articles = @user.articles.paginate(page: params[:page], per_page: 3)
+  end
+
+  def pundit_user
+    User.find(current_user.id)
+  end
+
+  def locations
+    @user = User.find(params[:id])
   end
 
   private
 
   def set_user
-    @user=User.find(params[:id])
-  end
-
-  def get_users
-    @users=User.order(created_at: :desc)
+    @user = User.find(params[:id])
   end
 
   def secure_params
-    params.require(:user).permit(:role)
+    params.require(:user).permit(:role, :username, :user_name, :email)
   end
 end
-
-

@@ -1,16 +1,21 @@
 
-<table class="table table-bordered">
+<table class="admintable table-bordered">
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col"><%= sort_link(@q, :title, "Title", default_order: :asc) %></th>
-      <th scope="col">content</th>
-      <th scope="col">created_at</th>
-      <th scope="col">status</th>
-      <th scope="col">author</th>
-      <th scope="col">category</th>
-      <th scope="col">approved</th>
-     </tr>
+      <th scope="col"><%= sort_link(@q, :title, t("Title")) %></th>
+      <th scope="col"><%= sort_link(@q, :description, t("description")) %></th>
+      <th scope="col"><%= sort_link(@q, :language, t("language")) %></th>
+      <th scope="col"><%= sort_link(@q, :created_at, t("created_at")) %></th>
+      <th scope="col"><%= sort_link(@q, :status, t("status")) %></th>
+      <th scope="col"><%= sort_link(@q, :user_name_or_email_or_role, t("author")) %></th>
+      <th scope="col"><%= link_to t("category"), categories_path %></th>
+      <th scope="col"><%= sort_link(@q, :approved, t("approved")) %></th> 
+      <th scope="col"> </th>
+      <th scope="col"> </th>
+      <th scope="col"><%=  t("likes")%></th>
+      <th scope="col"><%=  t("comments") %></th>
+      </tr>
   </thead>  
   <tbody>
 
@@ -18,22 +23,29 @@
     <tr>
       <th scope="row"><%= article.id %></th>
       <td><%= link_to article.title, article_path(article) %></td>
-      <td><%= article.body.to_s.split(" ").first(10).join(" ") %></td>
+      <td><%= article.description || "no description" %></td>
+      <td><%= article.language || "not chosen" %></td>
       <td><%= article.created_at %></td>
-      <td><%= article.status %></td>
+      <td><%= t("#{article.status}") %></td>
       <td><%= link_to article.user.email, user_path(article.user_id) %></td>
        <td><% Category.where(id: article.category_ids).find_each do |category|%> 
-      <%= link_to category.name, category_path(category.id) %>   
+      <%= link_to t("#{category.name}"), category_path(category.id) %>   
       <%end%></td>   
-      <td><%= article.approved ? "approved" : "not approved"%></td>
-      <td><%= link_to "Edit", edit_article_path(article) %></td>
-      <td><%= link_to "Destroy", article_path(article), data: {
+      <td><%= article.approved ? t("approved") : t("not approved")%></td>
+      <td><%= link_to t("Edit"), edit_article_path(article) %></td>
+      <td><%= link_to t("Destroy"), article_path(article), data: {
                     turbo_method: :delete,
-                    turbo_confirm: "Are you sure?"
+                    turbo_confirm: t("Are you sure?")
                   } %></td>
+      <td><%= article.likes.count %></td>
+      <td><%= article.comments.count %></td>
+
 
     </tr>
   
 <% end %>
  </tbody>
+   <div class="digg_pagination center article_index">    
+  <%= will_paginate @articles if @articles.count > 10%>
+</div>
 </table>

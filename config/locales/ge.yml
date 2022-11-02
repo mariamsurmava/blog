@@ -1,0 +1,165 @@
+ge:
+  hello: "გამარჯობა"
+  welcome: "კეთილი იყოს თქვენი მობრძანება"
+  email: 'ელ-ფოსტა'
+  password: 'პაროლი'
+  log in: "შესვლა"
+  sign up: "რეგისტრაცია"
+  log_out: "გამოსვლა"
+  edit: "რედაქტირება"
+  Edit: "რედაქტირება"
+  delete: "წაშლა"
+  categories: "კატეგორიები"
+  home: "მთავარი გვერდი"
+  edit profile: "პროფილის რედაქტირება"
+  article: "სტატია"
+  articles: "სტატიები"
+  all articles: "ყველა სტატია"
+  read more: "წაკითხვა"
+  category: "კატეგორია"
+  like: "მოწონება"
+  likes: "მოწონებები"
+  by: "ავტორი"
+  By: "ავტორი"
+  search: "ძიება"
+  comments: "კომენტარები"
+  create comment: "დააკომენტარე"
+  next: "შემდეგი"
+  previous: "წინა"
+  status: "სტატუსი"
+  public: "საჯრო"
+  archived: "დაარქივებული"
+  private: "პირადი"
+  role: "როლი" 
+  title: "სათაური"
+  Title: "სათაური"
+  content: "კონტენტი"
+  created_at: "შექმნის თარიღი"
+  author: "ავტორი"
+  approved: "დადასტურებული"
+  create new article: "შექმენი ახალი სტატია"
+  users: "მომხმარებლები"
+  destroy: "წაშლა"
+  Destroy: "წაშლა"
+  repeat the password: გაიმეორეთ პაროლი
+  characters minimum: სიმბოლო ან მეტი
+  Unhappy? Cancel your account: "უბედური ხარ? წაშალე ანგარიში"
+  current password: მიმდინარე პაროლი
+  we need your current password to confirm your changes: ცვლილებბეის დასადასტურებლად თქვენი პაროლი დაგვჭირდება"
+  leave blank if you don't want to change it: დატოვეთ ცარიელი თუ არ გნებავთ შეცვლა
+  back: "უკან"
+  Back: "უკან"
+  Are you sure?: "დარწმუნებული ხარ?"
+  members only: "მხოლოდ წევრებისთვის"
+  empty if not approved: "ცარიელი თუ არ არის დადასტურებული"
+  body: "ტექსტის არეა"
+  liked: მოწონებული
+  search for articles: მოძებნე სტატიები
+  Edit this category: კატეგორიის რედაქტირება
+  Back to categories: კატეგორიებში დაბრუნება
+  Destroy this category: კატეგორიის წაშლა
+  Destroy Comment: კომენტარის წაშლა
+  New password: ახალი პაროლი
+  Confirm new password: გაიმეორე პაროლი
+  Change my password: დადასტურება
+  Update: განახლება
+  Cancel my account: ანგარიშის წაშლა
+  username: მომხმარებლის სახელი
+  new-password: ახალი პაროლი
+  remember_me: დამიმახსოვრე
+  Log in: შესვლა
+  Sign up: რეგისტრაცია
+  Forgot your password?: დაგავიწყდა პაროლი?
+  not approved: დასადასტურებელი
+  profile: პროფილი
+  admin panel: ადმინის პანელი
+  sign in: შესვლა
+  edit Profile: პროფილოის რედაქტირება
+  log out: გასვლა
+  Log Out: გასვლა
+  art: ხელოვნება
+  history: ისტორია
+  whatever: ნებისმიერი
+  romance: რომანწიკა
+  books: წიგნები
+  it: აიტი
+  sport: სპორტი
+  description: აღწერა
+  no description: აღწერის გარეშე
+  hate: დაწუნება
+  hated: დაწუნებული
+  avatar: ავატარი
+  new article: ახალი სტატია
+  admin: ადმინი
+  New category: ახალი კატეგორია
+  Category request: კატეგორიის მოთხოვნა
+  check to approve: მონიშნე დადასტუებულად
+  Show this category:  მაჩვენე კატეგორია
+  Back to categories: ყველა კატეგორია
+  Categories: კატეგორიები
+  password confirmation: გაიმეორეთ პაროლი
+  language: ენა
+  categories by languages: ენის მიხედვით
+  english articles: ინგლისური სტატიები
+  georgian articles: ქართული სტატიები
+  please choose a language of your article so that readers can find your article easier: გთხოვთ აირჩიოთ თქვენი სტატიის ენა, რათა მკითხველმა მარტივად იპოვოს ის.
+  waiting for approval: ელოდება თქვენს თანხმობას
+  delete suggestion: წაშალე შემოთავაზება
+  category name: კატეგორიის სახელი
+  contact: საკონტაქტო ინფორმაცია
+  Phone: ტელეფონის ნომერი
+  Country: ქვეყანა
+  Edit this number: ნომრის რედაქტირება
+  Delete number: ნორმის წაშლა
+  New phone: ახალი ნომერი
+  Back to phones: ნომრებში დაბრუნება
+  subscribe: გაწევრიანება
+  You'll get never before seen content: ჯერ არნახული კონტენტი და დამატებით ყოველკვირეული სტატია
+  Subscribe for access: შესასვლელად გაწევრიანდი
+  you can see 'members only' articles: შეგიძლია იხილო 'მხოლოდ წევრებისთვის' სტატიები
+  you are already subscribed to the bloggold: თქვენ უკვე ხართ ჩვენი ბლოგის წევრი
+  Subscribe for $4/mo: გაწევიანდი თვეში 4 დოლარად
+  edit comment: კომენტარის რედაქტირება
+  Edit this phone: ნომრის რედაქტირება 
+  Delete phone: ნომრის წაშლა
+  Back to contacts: ნომრებში დაბრუნება
+  add location: მისამართის დამატება
+  locations: მისამართები
+  search: ძიება
+  latitude: განედი 
+  longitude: გრძედი
+  Name: დასახელება
+  name: დასახელება
+  Latitude: განედი
+  Longitude: გრძედი
+  Show this place: მაჩვენე ეს მისამართი
+  Back to places: ყველა მისამართის ნახვა  
+  New place: ახალი მისამართის დამატება
+  Destroy this place: მისამართის წაშლა
+  Edit this place: მისამართის რედაქტირება
+  explore: აღმოაჩინე
+  Too many atricles to choose which one to start with? explore random three articles and see what fate brings to you!: ბევრი სტატიაა და გიჭირს აარჩიო რომელი მათგანიდან დაიწყებ კითხვას? აღმოაჩინე  შემთხვევით შერჩეული სამი სტატია და ნახე რას მოგიტანს ბედი
+  prohibited this article from being saved: გამო ვერ შეიქმნა სტატია
+  prohibited this location from being saved: გამო ვერ დაემატა მისამართი
+  prohibited this phone from being saved: გამო ვერ დაემატა ნომერი
+  Title can't be blank: სათაური არ შეიძლება ცარიელი იყოს
+  Body can't be blank:  სტატიის ძირითადი ტექსტი არ შეიძლება ცარიელი იყოს
+  Name can't be blank: მისამათი არ შეიძლება იყოს ცარიელი
+  add location here: დაამატეთ მისამართი აქ
+  Phone can't be blank: ნომერი არ შეიძლება ცარიელი იყოს
+  Phone format not supported for chosen coutry: ნომრის ფორმატი არ შეესაბამება არჩეულ ქვეყანას
+  Phone Only positive number without spaces are allowed: ნომერი შეიძლება იყოს მხოლოდ დადებითი რიცხვები
+  commented on: დააკომენტარა პოსტზე-
+  sign in with google: გუგლით ავტორიზაცია
+  Didn't receive confirmation instructions?: არ მიგიღიათ დადასტურების ინსტრუქცია?
+  location unknown: მისამართი უცნობია
+  back to profile: პროფილზე დაბრუნება
+  edited: რედაქტირებულია
+  commented: დაკომენტარებულია
+  ago: წინ
+  Edit: რედაქტირება
+  Delete: წაშლა
+  all articles: ყველა სტატია
+  No notifications yet: შეტყობენებები არ გაქვს
+  disliked: დაიწუნა
+  get a PDF: ჩამოტვირთე PDF ფორმატით
